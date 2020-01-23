@@ -17,7 +17,14 @@ Level::~Level()
 // handle user input
 void Level::handleInput()
 {
-
+	if (input->isKeyDown(sf::Keyboard::Space)) {
+		input->setKeyUp(sf::Keyboard::Space);
+		std::cout << "space was pressed\n";
+	}
+	if (input->isKeyDown(sf::Keyboard::W)) {
+		input->setKeyUp(sf::Keyboard::W);
+		std::cout << "W was pressed\n";
+	}
 
 }
 
